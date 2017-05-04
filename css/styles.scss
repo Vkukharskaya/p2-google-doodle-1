@@ -1,4 +1,21 @@
+// Main
+@import "normalize";
+@import "google-homepage";
+
+
 /* Styling */
 body {
-    background: #9bafb5;
+    background: #c3f8d3;
+}
+
+// Stage
+
+// Parent
+#stage {
+    position: relative;
+}
+
+// Child
+#stage svg {
+    position: absolute;
 }
