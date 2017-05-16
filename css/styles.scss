@@ -18,18 +18,23 @@ body {
 
 // Child
 #stage svg {
-    
+margin-top: 120px;
+transform: rotate(45deg);
 position: absolute;
-    width: 10%;
+width: 35%;
    
     }
 
+#stage wasabi {
+    position: absolute;
+    
+}
 
 
 // Child
 #stage h1 {
     font-size: 11em;
-    color: white;
+    color: black;
     position: absolute;
     margin: inherit; 
 
