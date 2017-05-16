@@ -44,16 +44,15 @@ body {
 // Animations Go Here
 
 // First Frame
-#stage h1,
 #stage svg {
-    opacity: 1;
-        transition: opacity .5s;
-}
+    opacity: 0;
+        transition-timing-function: ease-in .25s;
+       
 
 // Last Frame
-#stage:hover h1,
 #stage:hover svg {
     opacity: 1;
+    transition-timing-function: ease-in-out .25s;
 
 }
 
