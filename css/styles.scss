@@ -1,58 +1,73 @@
 // Main
+
 @import "normalize";
 @import "google-homepage";
 
 
+$color-main: white;
+
+
+
+
+
+
 /* Styling */
 body {
-    background: white;
+    background: #ffffff;
 }
 
-// Stage
 
-// Parent
+// Stage (Parent)
 #stage {
-    position: relative;
+    position: relative; 
     overflow: hidden;
 }
 
-// Child
-#stage svg {
 
+
+
+// Child
+#Chopsticks {
     position: absolute;
+    margin: 120px;
     height: 15%;
-    margin-top: 120px;
-    margin-right: -10px;
     transform: rotate(65deg);
-    
-   
-    }
+}
+
+
+
+#wasabi {
+    position: absolute;
+    margin-top: 70%;
+    margin-bottom: 0;
+}
+
 
 
 // Child
 #stage h1 {
-    font-size: 11em;
-    color: black;
     position: absolute;
-    margin: inherit; 
+    margin-top: 50px;
+    margin-left: 10%;
+    font-size: 10em;
 
-    
 }
 
 
 
 // Animations Go Here
 
-// First Frame
-#stage svg {
-    opacity: 0;
-        transition-timing-function: ease-in .25s;
-       
+//#Chopsticks {
+//    animation: ScreenUp 3.5s infinite alternate-reverse both;
+//
+//}
 
-// Last Frame
-#stage:hover svg {
-    opacity: 1;
-    transition-timing-function: ease-in-out .25s;
-
-}
-
+   
+//#wasabi {
+//    animation: ScreenUp 3.5s infinite alternate-reverse both;
+//
+//}
+    
+    
+    
+   
