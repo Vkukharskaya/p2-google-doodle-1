@@ -28,110 +28,13 @@ body {
 
 // Child
 
-//plate
-.cls-1{fill:#e4d6c5;}.cls-2{fill:#f2ece4;}
-
-//chopstick
-.cls-3{fill:#e2d0a4;}.cls-4{fill:#eb2d30;}.cls-5{fill:#d1b872;}
-
-//sushi
-.cls-6{fill:#4e4622;}.cls-7{fill:#4e472f;}.cls-8{fill:#bca271;}.cls-9{fill:#ecbf6c;}.cls-10{fill:#c96028;}.cls-11{fill:#548622;}.cls-12{fill:#496a34;}.cls-13{fill:#e2e0d7;}.cls-14{fill:#f3f2ee;}
-
-//caviar
-.cls-15{fill:#d95611;}.cls-16{fill:#db751d;}
-
-
-
-
-
-
-
-
-
-//
-//#wasabi {
-//    position: absolute;
-//    height: 15%;
-//    margin-top: 255px;
-//    margin-left: -300px;
-//    
-//      .cls-1 {
-//        fill: #7fb521;}
-//    
-//    .cls-2 {
-//        fill: #231f20;}
-//}
-//
-//
-//#Chopsticks {
-//    position: absolute;
-//    margin: 120px;
-//    margin-left: 35px;
-//    height: 12%;
-//    transform: rotate(65deg);
-//    
-//    .cls-1 {
-//        fill: #d1b771;}
-//    .cls-2 {
-//        fill: #ec292e;
-//    }
-//}
-//
-//#Sushi1 {
-//    position: absolute;
-//    height: 25%;
-//    margin-top: 120px;
-//    margin-left: 159px;
-//    transform: rotate(45deg);
-//    
-//    .cls-1 {
-//        fill: #eee;}
-//    .cls-2 {
-//        fill: #231f20;
-//    }
-//    .cls-3 {
-//        fill: #ebebeb;
-//    }
-//    .cls-4 {
-//        fill: #f9631e;
-//    }
-//    
-//}
-//
-//#Sushi2 {
-//    position: absolute;
-//    width: 15%;
-//    margin-top: 118px;
-//    margin-left: -40px;
-//
-//    .cls-1 {
-//        fill: #231f20;}
-//    
-//    .cls-2 {
-//        fill: #ebebeb;
-//    }
-//    .cls-3 {
-//        fill: #e14d4a;
-//    }
-// 
-//}
-//
-//#Sushi3 {
-//    position: absolute;
-//    width: 20%;
-//    margin-top: 130px;
-//    margin-left: -130px;
-//
-//     .cls-1 {
-//        fill: #ebebeb;}
-//    
-//    .cls-2 {
-//        fill: #f0c6bc;
-//    }
-//    .cls-3 {
-//        fill: #e95124;
-//    }  
-//}
+svg {
+    position: absolute;
+    margin-bottom: 10px;
+    height: 10%;
+    
+    
+}
 
 
 
@@ -139,45 +42,45 @@ body {
 // Animations Go Here
 
 .cls-15, .cls-16 {
+  
+ animation-name: bounce; 
+ animation-duration: 5s; 
+ animation-iteration-count: infinite;
+ animation-direction: normal; 
+ animation-timing-function: ease; /* or: ease, ease-in, ease-in-out, linear, cubic-bezier(x1, y1, x2, y2) */
+ animation-fill-mode: backwards; /* or: backwards, both, none */
+ animation-delay: 2s;
+  
+  }
 
-    animation-name: bounceInDown 1s infinite;
-    
-}
-    
-
-
-   
 
 
 
-@keyframes bounceInDown {
-  from, 60%, 75%, 90%, to {
+
+@keyframes bounce {
+  from, 20%, 53%, 80%, to 
+  {
     animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    transform: translate3d(0,0,0);
   }
 
-  0% {
-    opacity: 0;
-    transform: translate3d(0, -3000px, 0);
+  40%, 43% {
+    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    transform: translate3d(0, -30px, 0);
   }
 
-  60% {
-    opacity: 1;
-    transform: translate3d(0, 25px, 0);
-  }
-
-  75% {
-    transform: translate3d(0, -10px, 0);
+  70% {
+    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    transform: translate3d(0, -15px, 0);
   }
 
   90% {
-    transform: translate3d(0, 5px, 0);
-  }
-
-  to {
-    transform: none;
+    transform: translate3d(0,-4px,0);
   }
 }
 
-.bounceInDown {
-  animation-name: bounceInDown;
+.bounce {
+  animation-name: bounce;
+  transform-origin: center bottom;
 }
+
