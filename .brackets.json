@@ -8,7 +8,8 @@
                 "outputStyle": "compressed"
             },
             "linting.collapsed": true,
-            "useTabChar": false
+            "useTabChar": false,
+            "fonts.fontSize": "25px"
         }
     }
 }
