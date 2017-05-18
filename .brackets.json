@@ -9,7 +9,7 @@
             },
             "linting.collapsed": true,
             "useTabChar": false,
-            "fonts.fontSize": "25px"
+            "fonts.fontSize": "10px"
         }
     }
 }

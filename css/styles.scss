@@ -27,117 +27,157 @@ body {
 
 
 // Child
-#wasabi {
-    position: absolute;
-    height: 15%;
-    margin-top: 255px;
-    margin-left: -200px;
-    
-      .cls-1 {
-        fill: #7fb521;}
-    
-    .cls-2 {
-        fill: #231f20;}
-}
 
+//plate
+.cls-1{fill:#e4d6c5;}.cls-2{fill:#f2ece4;}
 
-#Chopsticks {
-    position: absolute;
-    margin: 120px;
-    margin-left: 35px;
-    height: 12%;
-    transform: rotate(65deg);
-    
-    .cls-1 {
-        fill: #d1b771;}
-    .cls-2 {
-        fill: #ec292e;
-    }
-}
+//chopstick
+.cls-3{fill:#e2d0a4;}.cls-4{fill:#eb2d30;}.cls-5{fill:#d1b872;}
 
-#Sushi1 {
-    position: absolute;
-    height: 25%;
-    margin-top: 120px;
-    margin-left: 159px;
-    transform: rotate(45deg);
-    
-    .cls-1 {
-        fill: #eee;}
-    .cls-2 {
-        fill: #231f20;
-    }
-    .cls-3 {
-        fill: #ebebeb;
-    }
-    .cls-4 {
-        fill: #f9631e;
-    }
-    
-}
+//sushi
+.cls-6{fill:#4e4622;}.cls-7{fill:#4e472f;}.cls-8{fill:#bca271;}.cls-9{fill:#ecbf6c;}.cls-10{fill:#c96028;}.cls-11{fill:#548622;}.cls-12{fill:#496a34;}.cls-13{fill:#e2e0d7;}.cls-14{fill:#f3f2ee;}
 
-#Sushi2 {
-    position: absolute;
-    width: 15%;
-    margin-top: 118px;
-    margin-left: -40px;
-
-    .cls-1 {
-        fill: #231f20;}
-    
-    .cls-2 {
-        fill: #ebebeb;
-    }
-    .cls-3 {
-        fill: #e14d4a;
-    }
- 
-}
-
-#Sushi3 {
-    position: absolute;
-    width: 20%;
-    margin-top: 130px;
-    margin-left: -130px;
-
-     .cls-1 {
-        fill: #ebebeb;}
-    
-    .cls-2 {
-        fill: #f0c6bc;
-    }
-    .cls-3 {
-        fill: #e95124;
-    }  
-    
-}
+//caviar
+.cls-15{fill:#d95611;}.cls-16{fill:#db751d;}
 
 
 
-// Child
-#stage h1 {
-    position: absolute;
-    margin-top: 50px;
-    margin-left: 10%;
-    font-size: 10em;
 
-}
+
+
+
+
+
+//
+//#wasabi {
+//    position: absolute;
+//    height: 15%;
+//    margin-top: 255px;
+//    margin-left: -300px;
+//    
+//      .cls-1 {
+//        fill: #7fb521;}
+//    
+//    .cls-2 {
+//        fill: #231f20;}
+//}
+//
+//
+//#Chopsticks {
+//    position: absolute;
+//    margin: 120px;
+//    margin-left: 35px;
+//    height: 12%;
+//    transform: rotate(65deg);
+//    
+//    .cls-1 {
+//        fill: #d1b771;}
+//    .cls-2 {
+//        fill: #ec292e;
+//    }
+//}
+//
+//#Sushi1 {
+//    position: absolute;
+//    height: 25%;
+//    margin-top: 120px;
+//    margin-left: 159px;
+//    transform: rotate(45deg);
+//    
+//    .cls-1 {
+//        fill: #eee;}
+//    .cls-2 {
+//        fill: #231f20;
+//    }
+//    .cls-3 {
+//        fill: #ebebeb;
+//    }
+//    .cls-4 {
+//        fill: #f9631e;
+//    }
+//    
+//}
+//
+//#Sushi2 {
+//    position: absolute;
+//    width: 15%;
+//    margin-top: 118px;
+//    margin-left: -40px;
+//
+//    .cls-1 {
+//        fill: #231f20;}
+//    
+//    .cls-2 {
+//        fill: #ebebeb;
+//    }
+//    .cls-3 {
+//        fill: #e14d4a;
+//    }
+// 
+//}
+//
+//#Sushi3 {
+//    position: absolute;
+//    width: 20%;
+//    margin-top: 130px;
+//    margin-left: -130px;
+//
+//     .cls-1 {
+//        fill: #ebebeb;}
+//    
+//    .cls-2 {
+//        fill: #f0c6bc;
+//    }
+//    .cls-3 {
+//        fill: #e95124;
+//    }  
+//}
+
 
 
 
 // Animations Go Here
 
-//#Chopsticks {
-//    animation: 3.5s infinite alternate-reverse both;
-//
-//}
+.cls-15, .cls-16 {
+
+    animation-name: bounceInDown 1s infinite;
+    
+}
+    
+
 
    
-//#wasabi {
-//    animation: 3.5s infinite alternate-reverse both;
-//
-//}
-    
-    
-    
-   
+
+
+
+@keyframes bounceInDown {
+  from, 60%, 75%, 90%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -3000px, 0);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translate3d(0, 25px, 0);
+  }
+
+  75% {
+    transform: translate3d(0, -10px, 0);
+  }
+
+  90% {
+    transform: translate3d(0, 5px, 0);
+  }
+
+  to {
+    transform: none;
+  }
+}
+
+.bounceInDown {
+  animation-name: bounceInDown;
+}
